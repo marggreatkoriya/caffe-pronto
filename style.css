@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+
+    --primary-bg: #121212;
+
+    --secondary-bg: #1E1E1E;
+
+    --accent-color: #C89B3C;
+
+    --white: #FFFFFF;
+
+    --gray: #BDBDBD;
+
+}
+body {
+
+    font-family: 'Inter', sans-serif;
+
+    background-color: var(--primary-bg);
+
+    color: var(--white);
+
+}
+/* ===========================
+   Header
+=========================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(30, 30, 30, 0.8);
+    backdrop-filter: blur(12px);
+}
+.logo h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--accent-color);
+    font-size: 2rem;
+}
+/* Navigation */
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+.opening-hours {
+    text-align: right;
+}
+
+.opening-hours p {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.opening-hours span {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+.logo h2 {
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.reserve-btn {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.reserve-btn:hover {
+    background-color: #d9a741;
+    transform: translateY(-2px);
+}
