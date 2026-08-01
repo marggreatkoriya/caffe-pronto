@@ -23,13 +23,14 @@
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
     </nav>
+    <button id="theme-toggle">🌙</button>
 
     <!-- Opening Hours -->
     <div class="header-actions">
 
-    <button class="reserve-btn">
-        Reserve Table
-    </button>
+    <a href="#reservation" class="primary-btn">
+            Reserve Table
+        </a>
 
     <div class="opening-hours">
         <p>🕒 Open Daily</p>
@@ -135,7 +136,9 @@
                 <p>Rich espresso with silky steamed milk.</p>
                 <div class="price-row">
                     <span>₹220</span>
-                    <button class="add-btn">+</button>
+                    <button class="add-btn">
+                        +<span class="count">0</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -147,7 +150,9 @@
                 <p>Creamy coffee with vanilla flavor.</p>
                 <div class="price-row">
                     <span>₹240</span>
-                    <button class="add-btn">+</button>
+                    <button class="add-btn">
+                        +<span class="count">0</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -159,7 +164,9 @@
                 <p>Espresso blended with chocolate.</p>
                 <div class="price-row">
                     <span>₹260</span>
-                    <button class="add-btn">+</button>
+                    <button class="add-btn">
+                        +<span class="count">0</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -171,7 +178,9 @@
                 <p>Fresh baked cheesecake with blueberries.</p>
                 <div class="price-row">
                     <span>₹280</span>
-                    <button class="add-btn">+</button>
+                    <button class="add-btn">+
+                        <span class="count">0</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -296,6 +305,28 @@
     </div>
 
 </section>
+<!-- Reservation Success Modal -->
+
+<div class="modal" id="successModal">
+
+    <div class="modal-content">
+
+        <span class="close-btn">&times;</span>
+
+        <h2>🎉 Reservation Successful!</h2>
+
+        <p>
+            Thank you for choosing <strong>Caffé Pronto</strong>.<br>
+            We look forward to serving you.
+        </p>
+
+        <button id="okBtn" class="primary-btn">
+            OK
+        </button>
+
+    </div>
+
+</div>
         
         <!-- Contact Section -->
        <section id="contact">
